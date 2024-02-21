@@ -5,50 +5,89 @@
     <head><!--Dentro del head van las etiquetas informativas-->
 
         <meta charset="UTF-8"><!--Define el diccionario-->
+        <meta name="viewport" content="width=device-width"><!--se usa para adaptar la pagina a dispositivos moviles-->
         <title>Barberia Alura</title>
+        <link rel="stylesheet"  href="reset.css">
         <link rel="stylesheet" href="style.css"><!--Enlazamos el archivo style.css con el HTML-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     </head>
 
     <body><!--Dentro del body va todas las etiquetas de contenido de la pagina-->
 
         <header>
-            <h1 class="titulo-principal" >Barberia Alura</h1>
+            <div class="caja">
+                <h1><img src="img/logo.png"></h1> 
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>  
         </header>
 
-        <img id="barberia"  src="img/barberia.jpeg">
+        <img class="barberia"  src="img/barberia.jpeg">
 
-        <div class="principal">
-            <h2 class="tituloCentralizado">Sobre la Barbería Alura</h2>
+        <main>
+            
+            <section class="principal">
+                <h2 class="titulo-principal">Sobre la Barbería Alura<h2>
+    
+                <img src="img/utensilios.jpg"   class="utensilios" alt="Utensilios de un barbero">
+    
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p> 
+                <!--
+                <em></em> texto italico
+                <strong></strong> texto en negrita
+                La etiqueta <strong> se le conoce en este caso como etiqueta nieta
+                ya que hereda la formatacion de la etiqueta <em> que seria su padre y de la etiqueta <p> que seria su abuelo.
+                -->
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+    
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+            </section>
+            <section class="mapa">
 
+                <h3 class="titulo-principal">Nuestra ubicación:</h3>
+                <p> Nuestro establecimiento esta ubicado en el corazon de la ciudad</p>
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17392.71916122248!2d-46.645877716487554!3d-23.59110295692727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bd9bb943bf5%3A0x6f642995c970f0fe!2scaelum%20alura!5e0!3m2!1ses-419!2smx!4v1707742230076!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+
+            </section>
+            <section class="diferenciales">
+                <h4 class="titulo-principal">Diferenciales</h4>
+                <div class="contenido-diferenciales">
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atencion personalizada a los clientes</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localizacion</li>
+                        <li class="items">Profesionales destacados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="img/diferenciales.webp" class="imagen-diferenciales">
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY?si=y6tsSXjvmPrxzyxF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+            
+
+        </main>
+
+
+
+        <footer><!---Representa el pie de página de la pagina--->
+            <img src="img/logo-blanco.png">
+            <p class="copyright"> &copy Copyright Barberia Alura - 2024</p>
+        </footer>
         
-
-            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p> 
-            <!--
-            <em></em> texto italico
-            <strong></strong> texto en negrita
-            La etiqueta <strong> se le conoce en este caso como etiqueta nieta
-            ya que hereda la formatacion de la etiqueta <em> que seria su padre y de la etiqueta <p> que seria su abuelo.
-            -->
-            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
-
-            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
-        </div>
-
-        <div class="diferenciales">
-            <h3 class="tituloCentralizado">Diferenciales</h3>
-            <ul>
-                <li class="items">Atencion personalizada a los clientes</li>
-                <li class="items">Espacio diferenciado</li>
-                <li class="items">Localizacion</li>
-                <li class="items">Profesionales destacados</li>
-            </ul>
-
-            <img src="img/diferenciales.webp" class="imagenDiferenciales">
-        </div>
-
-        
-
     </body>
 
 </html>
